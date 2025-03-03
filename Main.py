@@ -2,8 +2,8 @@ import spacy
 
 nlp = spacy.load("en_core_web_sm")
 
-doc = nlp("Can you tell me what its like at Microsoft?")
-doc2 = nlp("Tell me how beautiful Canada is.")
+doc = nlp("Can you tell me what its like at Microsoft?") # Prints "Sorry, I don't know. I don't work for Microsoft."
+doc2 = nlp("Tell me how beautiful Canada is.") # Prints "Sorry, I don't know. I've never been to Canada."
 
 for ent in doc.ents:
     if ent.label_ == "ORG":
