@@ -1,2 +1,2 @@
 # Simple SpaCy Example
-A simple example showing the use of entities in the spaCy library
+A simple example showing the use of entities from the spaCy library
